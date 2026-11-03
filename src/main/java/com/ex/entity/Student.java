@@ -37,6 +37,7 @@ public class Student {
             name = "student_skills",
             joinColumns = @JoinColumn(name = "student_id")
     )
+    //@Column(name = "skill")
     private Set<String> skills;
 
     public Student(Long id, String name, String email, int age, Set<String> skills) {
